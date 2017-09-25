@@ -1,0 +1,6 @@
+<div class="well" *ngIf="selectedPost">
+  <label>Edit Title:</label>
+   <input [(ngModel)] = "selectedPost.title" required class="form-control">
+   <label>Edit Content:</label>
+   <input [(ngModel)] = "selectedPost.content" required class="form-control">
+</div>

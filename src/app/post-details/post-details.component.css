@@ -1,0 +1,13 @@
+.card-block{
+  padding: 10px;
+}
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.link{
+  color:blue;
+}
+.card-header{
+  font-size:2em;
+}

@@ -1,0 +1,25 @@
+<div class="card mb-3">
+  <img class="card-img-top" src="{{categoryToDisplay.header}}" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">Discussions in {{categoryToDisplay.name}}</h2>
+      <ul class="list-group list-group-flush">
+        <li *ngFor = "let post of categoryToDisplay.posts" class="list-group-item">
+          {{post.points}} <button type="button" (click)="goToDetailsPage(post)">  {{post.title}}</button>
+
+          <button type="button" name="button"(click) = "editPost(post)">edit</button>
+
+          <button type="button" name="button" class="btn-success"(click) = "upvote(post)">upvote</button>
+          <button type="button" class="btn-warning"name="button"(click) = "downvote(post)">downvote</button>
+
+          <button type="button" class="btn-danger"(click) = "deletePost(post)">X</button>
+
+          <p>{{post.timePosted}}</p>
+
+        </li>
+      </ul>
+  </div>
+</div>
+
+<app-new-post (newPostSender) = "newPost($event)"></app-new-post>
+<br>
+<app-edit-post [selectedPost] = "selectedPost"></app-edit-post>

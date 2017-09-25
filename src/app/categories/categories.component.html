@@ -1,0 +1,9 @@
+<div class="page-header">
+  <h1>Categories</h1>
+</div>
+
+<div class="card">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let category of allCategories" (click)="goToDetailsPage(category)"><a>{{category.name}}</a></li>
+  </ul>
+</div>

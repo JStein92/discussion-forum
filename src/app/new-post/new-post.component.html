@@ -1,0 +1,12 @@
+<div>
+  <h1>New Post</h1>
+    <div>
+      <label>Post Title:</label>
+      <input #title class="form-control">
+      <label>Post Content:</label>
+      <input #content class="form-control">
+
+      <button class = 'btn btn-success' (click)="submitForm(title.value, content.value);
+       content.value=''; title.value='';">Submit Post</button>
+    </div>
+  </div>
