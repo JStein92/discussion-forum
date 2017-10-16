@@ -1,4 +1,8 @@
-# DiscussionForum
+# Discussion Forum
+
+#### _A project to practice Firebase integration with Angular2_
+
+## Made with Angular2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
